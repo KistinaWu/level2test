@@ -1,0 +1,35 @@
+* {
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+}
+
+header { grid-area: h; }
+nav { grid-area: n; }
+main { grid-area: m; }
+footer { grid-area: f; }
+
+body {
+  /* max-width: 85%; */
+  margin: 0 auto;
+  display: grid;
+  grid-template-areas:
+    'h h h  '
+    'n m m '
+    'n m m  '
+    'f f f ';
+  
+  grid-gap: 10px;
+  background-color:lightblue;
+  padding: 10px;
+  border:1px solid black;
+}
+
+header,nav,main,footer {
+  background-color:lightgrey;
+  text-align: center;
+  padding: 20px 0;
+  font-size: 30px;
+  border:1px solid black;
+}
+
