@@ -22,7 +22,8 @@ body {
   grid-gap: 10px;
   background-color:lightblue;
   padding: 10px;
-  border:1px solid black;
+  border:2px solid black;
+
 }
 
 header,nav,main,footer {
