@@ -6,7 +6,9 @@
 
 header { grid-area: h; }
 nav { grid-area: n; }
-main { grid-area: m; }
+.p1 {grid-area:p1;}
+.p2 {grid-area:p2;}
+/* main { grid-area: m; } */
 footer { grid-area: f; }
 
 body {
@@ -14,10 +16,11 @@ body {
   margin: 0 auto;
   display: grid;
   grid-template-areas:
-    'h h h '
-    'n m m '
-    'n m m '
-    'f f f ';
+    'h h h h '
+    'n n n n '
+    /* 'm m m m' */
+    'p1 p1 p2 p2'
+    'f f f f';
   
   grid-gap: 10px;
   background-color:lightblue;
@@ -26,11 +29,24 @@ body {
 
 }
 
-header,nav,main,footer {
+header,nav,footer, .p1,.p2 {
   background-color:lightgrey;
   text-align: center;
   padding: 20px 0;
-  font-size: 30px;
+  font-size: 20px;
   border:1px solid black;
 }
 
+/* .column{
+  width:50%;
+  border:2px solid black;
+  float:left;
+  margin:20px;
+} */
+
+.p1, .p2{
+  border:2px solid black;
+  font-size:12px;
+  padding:10px;
+  width:100%;
+}
